@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Resizable } from "re-resizable";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { AiOutlineMinus } from "react-icons/ai";
@@ -21,12 +21,10 @@ function AppMenu({ setMoreState, showSearch, setShowSearch, setApp }) {
   const developer = ["Activity", "Chat", "Teams", "Calendar"];
   const [general, setGeneral] = useState([]);
   const [user, setUser] = useState();
-  const [height, setHeight] = useState(0);
   const MenuArray = menuItems.filter((item) => general.includes(item.title));
   const [state, setState] = useState({ height: (general.length + 1) * 58 });
   const [datas, setDatas] = useState(MenuArray.slice(0, 7));
   const [dotsItem, setDotItems] = useState([]);
-  console.log(user);
 
   useEffect(() => {
     const saved = localStorage.getItem("name");
@@ -127,7 +125,6 @@ function AppMenu({ setMoreState, showSearch, setShowSearch, setApp }) {
             </div>
           </div>
         </Resizable>
-        .
       </div>
       <div className="">
         <div

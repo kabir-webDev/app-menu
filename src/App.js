@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import AppDetails from "./components/AppDetails";
 import AppMenu from "./components/AppMenu";
-import Drag from "./components/Drag";
+import Header from "./components/Header";
 import SearchModal from "./components/SearchModal";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         setApp={setApp}
         app={app}
       />
-      <Drag />
+      <Header />
       <SearchModal
         moreState={moreState}
         showSearch={showSearch}

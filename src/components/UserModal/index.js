@@ -33,7 +33,6 @@ export default function DirectionModal() {
   const handleClose = (name) => {
     setOpen(false);
     localStorage.setItem("name", JSON.stringify(name));
-    console.log(name);
   };
 
   const body = (

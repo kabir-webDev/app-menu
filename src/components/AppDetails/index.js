@@ -43,7 +43,7 @@ function AppDetails({ app }) {
       );
       const json = await res.json();
       setUser(json);
-      console.log("Boom: ", user?.name);
+      console.log("Fetched Username: ", user?.name);
     };
     fetchData();
   }, [app]);

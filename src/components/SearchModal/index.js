@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { RiSearchLine } from "react-icons/ri";
 import { allItems } from "../../appData.js";
 
 function SearchModal({ moreState, showSearch, setApp, setShowSearch }) {
@@ -18,7 +17,7 @@ function SearchModal({ moreState, showSearch, setApp, setShowSearch }) {
             type="search"
             name="search"
             placeholder="Search"
-            autocomplete="off"
+            autoComplete="off"
             onChange={(event) => setTitle(event.target.value)}
           />
         </div>
